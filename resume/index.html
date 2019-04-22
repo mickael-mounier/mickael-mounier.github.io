@@ -1,0 +1,136 @@
+---
+layout: resume
+---
+<div class="top-right-ribbon"><a href="{{ site.data.resume.pdf }}">PDF version</a></div>
+<div class="site-wrap">
+    <div class="resume">
+        <div class="resume-page">
+            <div class="resume-header clearfix">
+                <div class="resume-header-left">
+                    <div class="name first-color">{{ site.data.resume.name }}</div>
+                    <div class="title second-color">{{ site.data.resume.title }}</div>
+                    <div class="resume-header-info two-columns">
+                        {% for column in site.data.resume.header %}
+                        <div class="column">
+                            {% for i in column %}
+                            <div class="resume-header-info-item">
+                                <i class="fa fa-{{ i.icon }} second-color" aria-hidden="true"></i>
+                                <span class="resume-header-info-item-text">
+                                    {% if i.href %}
+                                    <a href="{{ i.href }}" target="_blank">{{ i.text }}</a>
+                                    {% else %}
+                                    {{ i.text }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="resume-header-right">
+                    <div class="resume-photo"></div>
+                </div>
+            </div>
+            <div class="resume-body clearfix">
+                <div class="resume-left-column">
+                    <div class="resume-section">
+                        <div class="resume-section-title first-color first-color-border">Experience</div>
+                        {% for i in site.data.resume.experience_page1 %}
+                        {% include resume_experience.html %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="resume-right-column">
+                    <div class="resume-section">
+                        <div class="resume-section-title first-color first-color-border">Summary</div>
+                        <div class="resume-section-item">
+                            <div class="resume-section-item-inner">
+                                {% for i in site.data.resume.summary %}
+                                <p>{{ i }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <div class="resume-section-title first-color first-color-border">Education</div>
+                        {% for i in site.data.resume.education %}
+                        {% include resume_experience.html %}
+                        {% endfor %}
+                    </div>
+                    <div class="resume-section">
+                        <div class="resume-section-title first-color first-color-border">Languages</div>
+                        {% for i in site.data.resume.languages %}
+                        <div class="resume-section-item">
+                            <div class="resume-section-item-inner clearfix">
+                                <div class="language-left">
+                                    <div class="language-name first-color">{{ i.name }}</div>
+                                    <div class="language-proficiency">{{ i.proficiency }}</div>
+                                </div>
+                                <div class="language-right">{% for d in i.note %}<div class="slider-dot slider-dot-filled {% if d == "y" %}second-color-bg{% else %}first-color-bg{% endif %}"></div>{%endfor %}</div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-break"></div>
+        <div class="resume-page">
+            <div class="resume-body clearfix">
+                <div class="resume-left-column">
+                    <div class="resume-section">
+                        <div class="resume-section-title first-color first-color-border">Experience</div>
+                        {% for i in site.data.resume.experience_page2 %}
+                        {% include resume_experience.html %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="resume-right-column">
+                    <div class="resume-section interests">
+                        <div class="resume-section-title first-color first-color-border">Interests</div>
+                        {% for i in site.data.resume.interests %}
+                        <div class="resume-section-item">
+                            <div class="resume-section-item-inner">
+                                <i class="fa fa-{{ i.icon }} second-color" aria-hidden="true"></i>{{ i.text }}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="resume-section">
+                <div class="resume-section-title first-color first-color-border">Technologies &amp; Skills</div>
+                {% for line in site.data.resume.skills %}
+                <div class="resume-section-item">
+                    <div class="resume-section-item-inner">
+                        {% capture line_size %}{{ line | size }}{% endcapture %}
+                        {% if line_size == 1 %}
+                        {% for i in line %}
+                        {% include resume_skills.html %}
+                        {% endfor %}
+                        {% else %}
+                        <div class="two-columns">
+                            {% for i in line %}
+                            <div class="column">
+                                {% include resume_skills.html %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-content">
+        <div class="source-code">
+            Visit <a href="{{ site.data.resume.source }}" target="_blank">my Github</a>
+            for the source code of this resume!
+        </div>
+        <div class="last-update">Last update: {{ site.data.resume.last_update }}</div>
+    </div>
+</div>

@@ -1,0 +1,238 @@
+name: Mickaël Mounier
+title: Software Engineer
+
+pdf: mickael_mounier_resume.pdf
+last_update: september 2017
+source: https://github.com/mickael-mounier/mickael-mounier.github.io
+
+header:
+  -
+    - icon: envelope
+      text: mickael@mounier.io
+      href: mailto:mickael@mounier.io
+
+    - icon: linkedin
+      text: linkedin.com/in/mmounier
+      href: https://www.linkedin.com/in/mmounier
+
+    - icon: map-marker
+      text: Montreal, Canada
+
+  -
+    - icon: github
+      text: github.com/mickael-mounier
+      href: https://github.com/mickael-mounier
+
+    - icon: link
+      text: mounier.io
+      href: http://mounier.io
+
+
+summary:
+
+  - I'm a fast learning tech enthusiast looking for challenges.
+    Passionate about computer science and software architecture.
+
+  - I've been writing code since the age of 12. My strongest skills
+    are on the Back End side but I also love Front End and DevOps.
+
+
+education:
+
+  - position: Computer Science Engineer
+    company: EPITA
+    date: 2009
+    location: Paris, France
+    description:
+      - Major in <em>Cognitive Sciences and Avanced Computing</em>
+
+  - position: Research Master's degree
+    company: Paris West University
+    date: 2009
+    location: Nanterre, France
+    description:
+      - Major in <em>Natural Language Processing</em>
+
+  - position: Classe préparatoire MP
+    company: Lycée Camille Vernet
+    date: 2006
+    location: Valence, France
+    description:
+      - Heavy Mathematic and Physic preparation for
+        engineering schools' entrance examinations
+
+
+languages:
+
+  - name: French
+    proficiency: Native
+    note: [y,y,y,y,y]
+
+  - name: English
+    proficiency: Proficient
+    note: [y,y,y,y,n]
+
+  - name: Spanish
+    proficiency: Beginner
+    note: [y,n,n,n,n]
+
+
+interests:
+  - icon: gamepad
+    text: Video Games / eSports
+
+  - icon: book
+    text: Technical Books
+
+  - icon: paint-brush
+    text: Graphic Design
+
+  - icon: music
+    text: Music
+
+  - icon: bicycle
+    text: Biking
+
+  - icon: line-chart
+    text: Trading
+
+
+skills:
+
+  -
+    - title: Back End
+      tags:
+        - Python
+        - C++
+        - Node.js
+        - Java
+
+    - title: Front End
+      tags:
+        - HTML
+        - CSS3
+        - JavaScript
+        - AngularJS
+
+  -
+    - title: Other
+      tags:
+        - Git
+        - TDD
+        - Release Management
+        - Distributed Computing
+
+    - title: Databases
+      tags:
+        - MongoDB
+        - Redis
+        - MySQL
+
+  -
+    - title: DevOps
+      tags:
+        - Linux
+        - Shell Script
+        - Security
+        - Chef
+        - Fabric
+        - AWS/OpenStack
+        - Docker
+        - GitLab
+
+
+experience_page1:
+
+  - position: Online Developer
+    company: Ubisoft - For Honor
+    date: Sep 2016 - ongoing
+    location: Montreal, Canada
+    description:
+      - Ownership of a core Web Service for the online experience of
+        the For Honor game. Manages and store players' inventories,
+        progression, rewards, crafting, etc. of the players (Python,
+        MongoDB, C++)
+      - Various pipeline and DevOps work to enhance isolation, testing,
+        and release of our online services (GitLab, Docker, Python)
+      - Worked on the integration of AWS GameLift with our Matchmaker
+
+  - position: Online Developer
+    company: Ubisoft - Rendez-Vous
+    date: Jul 2015 - Sep 2016
+    location: Montreal, Canada
+    description:
+      - Development of a Web Service and portal to create, deploy,
+        configure and manage online servers for Ubisoft games
+        (Python, AngularJS)
+      - Mostly focused on a feature allowing to create, provision
+        and deploy game servers and databases in private clouds on
+        demand by the end-users (OpenStack, Chef, Windows, Linux)
+
+  - position: Freelance Full Stack Developer
+    company: ETAI
+    date: Feb 2014 - Aug 2014
+    location: Antony, France
+    description:
+      - Development of a web application prototype to input and
+        annotate complex data (jQuery, JavaScript, CSS, Java EE)
+      - Corrections and evolutions on various web applications
+        (Python framework pyramid, Java EE)
+      - Modernization of the deployment process for various web
+        services (Salt, Linux)
+
+  - position: Freelance C++ Developer
+    company: BNP Paribas
+    date: Mar 2013 - Feb 2014
+    location: Paris, France
+    description:
+      - Development of an application for equity derivatives
+        trading, high-frequency automata and click-trading
+      - Core of the application and its automata in C++, low
+        latency and performance oriented, GUI in Java based on
+        the Eclipse RCP framework
+      - Most of the work was for the Options Market Making for
+        the Eurex and Liffe markets
+      - Support role in contact with the support team and the
+        traders, also involved in the release and validation
+        process
+
+experience_page2:
+
+  - position: Software Engineer, R&D
+    company: Syllabs
+    date: Feb 2009 - Dec 2012
+    location: Paris, France
+    description:
+      - Design of a Text Mining language (linguists oriented)
+        and conception of its compiler/interpreter. High
+        performance C++, Boost/STL, Metaprogramming, parsing
+        (GNU flex/bison), syntactic trees manipulation and
+        optimisation
+      - Conception of a distributed Web Mining/Scraping platform
+        (Big Data, Python, Redis, MySQL, MongoDB and Riak)
+      - Many tools around Text Mining and Web Mining with some
+        of them exposed through APIs with millions of request
+        per day (Python, Pyramid, Django, MongoDB)
+      - Design and conception of private dashboards to monitor
+        the servers, jobs statuses and logs (Python, Django,
+        MongoDB)
+      - Involved in european and national research projects
+        (Python, Machine Learning, numpy)
+      - Conception of a webpage DOM annotation software (C++, Qt)
+
+  - position: Game Developer
+    company: Puny Human Games
+    date: Mar 2008 - Mar 2010
+    location: Remote (USA)
+    description:
+      - Involved in the development of an online FPS
+        game called Dystopia based on Valve's Source Engine.
+        Worked on gameplay, networking, UI and shaders (C++)
+
+  - position: Intern
+    company: EDS
+    date: Sep 2007 - Jan 2008
+    location: Nanterre, France
+    description:
+      - Development of a credit card payment authorization server
+        through TCP/IP over SSL (C, C++, OpenSSL)
