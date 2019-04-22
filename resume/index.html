@@ -1,0 +1,108 @@
+---
+layout: resume
+---
+<div class="top-right-ribbon"><a href="{{ site.data.resume.pdf }}">PDF version</a></div>
+<div class="site-wrap">
+    <div class="resume">
+        <div class="resume-page">
+            <div class="resume-header clearfix">
+                <div class="resume-header-left">
+                    <div class="name first-color">{{ site.data.resume.name }}</div>
+                    <div class="title second-color">{{ site.data.resume.title }}</div>
+                </div>
+                <div class="resume-header-right">
+                    <div class="resume-header-info">
+                        {% for column in site.data.resume.header %}
+                        {% for i in column %}
+                        <div class="resume-header-info-item">
+                            <i class="fa fa-{{ i.icon }} second-color" aria-hidden="true"></i>
+                            <span class="resume-header-info-item-text">
+                                {% if i.href %}
+                                <a href="{{ i.href }}" target="_blank">{{ i.text }}</a>
+                                {% else %}
+                                {{ i.text }}
+                                {% endif %}
+                            </span>
+                        </div>
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="resume-profile">
+                <div class="resume-profile-title first-color first-color-border">Summary</div>
+                <div class="resume-profile-copy">
+                    {% for i in site.data.resume.summary %}
+                    <p>{{ i }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="resume-body clearfix">
+                <div class="resume-left-column">
+                    <div class="resume-section">
+                        <div class="resume-section-title first-color first-color-border">Experience</div>
+                        {% for i in site.data.resume.experience_page1 %}
+                        {% include resume_experience.html %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="resume-right-column">
+                    <div class="resume-section compact-skills">
+                        <div class="resume-section-title first-color first-color-border">Technologies &amp; Skills</div>
+                        {% for line in site.data.resume.skills %}
+                        {% for i in line %}
+                        <div class="resume-section-item">
+                            <div class="resume-section-item-inner">
+                                {% include resume_skills.html %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-break"></div>
+        <div class="resume-page">
+            <div class="resume-body clearfix">
+                <div class="resume-left-column">
+                    <div class="resume-section">
+                        <div class="resume-section-title first-color first-color-border">Experience</div>
+                        {% for i in site.data.resume.experience_page2 %}
+                        {% include resume_experience.html %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="resume-right-column">
+                    <div class="resume-section">
+                        <div class="resume-section-title first-color first-color-border">Education</div>
+                        {% for i in site.data.resume.education %}
+                        {% include resume_experience.html %}
+                        {% endfor %}
+                    </div>
+                    <div class="resume-section languages">
+                        <div class="resume-section-title first-color first-color-border">Languages</div>
+                        {% for i in site.data.resume.languages %}
+                        <div class="resume-section-item">
+                            <div class="resume-section-item-inner language-row">
+                                <div class="language-name first-color">{{ i.name }}</div>
+                                <div class="language-proficiency">{{ i.proficiency }}</div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="resume-section interests">
+                        <div class="resume-section-title first-color first-color-border">Interests</div>
+                        {% for i in site.data.resume.interests %}
+                        <div class="resume-section-item">
+                            <div class="resume-section-item-inner">
+                                <i class="fa fa-{{ i.icon }} second-color" aria-hidden="true"></i>{{ i.text }}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

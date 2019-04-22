@@ -1,0 +1,173 @@
+name: Mickaël Mounier
+title: Technical Lead, Multiplayer Online Systems
+
+pdf: mickael_mounier_resume.pdf
+
+header:
+  -
+    - icon: envelope
+      text: mickael@mounier.io
+      href: mailto:mickael@mounier.io
+
+    - icon: map-marker
+      text: Montreal, Canada
+
+  -
+    - icon: linkedin
+      text: linkedin.com/in/mmounier
+      href: https://www.linkedin.com/in/mmounier
+
+    - icon: link
+      text: mounier.io
+      href: https://mounier.io
+
+
+summary:
+
+  - Technical lead and senior engineer specializing in live multiplayer online
+    systems, with nearly 20 years of software development experience and 10+
+    years delivering and operating For Honor's online services across PC,
+    PlayStation, and Xbox.
+
+  - Leads backend architecture, game-client integration, dedicated servers,
+    reliability, release operations, incident response, and cross-discipline
+    delivery for live game services.
+
+
+experience_page1:
+
+  - position: Technical Lead
+    company: Ubisoft - For Honor
+    date: Dec 2022 - Present
+    location: Montreal, Canada
+    description:
+      - Leads technical direction for 15+ For Honor live online services across
+        PC, PlayStation, and Xbox, spanning backend architecture, service
+        reliability, production operations, and game-client integration
+      - Guides technical designs, reviews critical changes, mentors engineers,
+        and supports incident response for live services
+      - Coordinates online-service work across gameplay, UI, tools, DevOps,
+        QA, and production stakeholders
+      - Designed and coordinated For Honor's cross-progression transition (PC,
+        PlayStation, Xbox) across backend services, game-client integration,
+        data migration, first-party certification, release planning, and
+        live operations for all active accounts with no major launch regressions
+      - Improved service configuration, testing, and deployment pipelines to
+        make six-week client updates and more frequent backend deployments safer
+        and more repeatable
+      - Contributed to player safety and game security initiatives, including
+        anti-cheat integration, client-side hardening, and backend abuse
+        mitigation
+
+  - position: Online Developer
+    company: Ubisoft - For Honor
+    date: Sep 2016 - Dec 2022
+    location: Montreal, Canada
+    description:
+      - Built and maintained multiple backend services supporting For Honor's
+        live online experience
+      - Delivered features across player progression, inventory, rewards,
+        matchmaking, ranking, and game-client integration
+      - Designed, maintained, and tuned matchmaking, skill rating, and ranking
+        systems for live multiplayer populations
+      - Contributed to the post-launch migration from P2P networking to
+        dedicated servers by integrating AWS GameLift into the matchmaking
+        stack and porting the dedicated server from Windows to Linux
+
+
+experience_page2:
+
+  - position: Online Developer
+    company: Ubisoft - Rendez-Vous
+    date: Jul 2015 - Sep 2016
+    location: Montreal, Canada
+    description:
+      - Developed a web service and companion website to create, deploy,
+        configure, and manage online servers for Ubisoft games (Python,
+        AngularJS)
+      - Built self-service provisioning workflows for game servers and
+        databases in private clouds (OpenStack, Chef, Windows, Linux)
+
+  - position: Freelance Full Stack Developer
+    company: ETAI
+    date: Feb 2014 - Aug 2014
+    location: Antony, France
+    description:
+      - Prototyped a web application for entering and annotating complex
+        data (jQuery, JavaScript, CSS, Java EE)
+      - Maintained web applications and modernized deployment processes
+        (Pyramid, Java EE, Salt, Linux)
+
+  - position: Freelance C++ Developer
+    company: BNP Paribas
+    date: Mar 2013 - Feb 2014
+    location: Paris, France
+    description:
+      - Built low-latency C++ components for equity derivatives trading,
+        high-frequency automation, and click trading
+      - Focused on options market making for Eurex and Liffe, with support
+        for traders, releases, and validation
+
+  - position: Software Engineer, R&D
+    company: Syllabs
+    date: Feb 2009 - Dec 2012
+    location: Paris, France
+    description:
+      - Designed and implemented a high-performance C++ text mining language
+        and compiler/interpreter for linguists (Boost/STL, GNU flex/bison)
+      - Built distributed web mining, scraping, and API platforms serving
+        millions of requests per day (Python, Pyramid, Django, Redis, MySQL,
+        MongoDB, Riak)
+      - Created internal monitoring dashboards and contributed to research
+        projects involving machine learning and NumPy
+
+education:
+
+  - position: Computer Science Engineer
+    company: EPITA
+    date: 2009
+    location: Paris, France
+    description:
+      - Major in Cognitive Sciences and Advanced Computer Science
+
+  - position: Research Master's degree
+    company: Paris Nanterre University
+    date: 2009
+    location: Nanterre, France
+    description:
+      - Major in Natural Language Processing
+
+languages:
+
+  - name: French
+    proficiency: Native
+
+  - name: English
+    proficiency: Fluent
+
+
+interests:
+  - icon: gamepad
+    text: Video games
+
+  - icon: wrench
+    text: Building things
+
+  - icon: book
+    text: Technical reads
+
+
+skills:
+  -
+    - title: Online Games
+      tags: [Game Services Design, Live Operations, Game Security, Service Reliability, Release Pipelines, Incident Response, Matchmaking, Cross-Progression, Dedicated Servers]
+    - title: Infrastructure
+      tags: [Kubernetes, Docker, Linux, AWS GameLift, ArgoCD]
+  -
+    - title: Data & Observability
+      tags: [MongoDB, Redis, MySQL, Elasticsearch, Prometheus, Grafana, Kibana]
+    - title: Tools & Pipelines
+      tags: [Git, Perforce, GitLab CI/CD, CMake, Build Systems]
+  -
+    - title: Programming
+      tags: [Python, C++, JavaScript]

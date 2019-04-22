@@ -1,0 +1,29 @@
+baseurl: ""
+url: "http://mounier.io"
+
+
+github_username: mickael-mounier
+google_analytics: UA-85342122-1
+disqus:
+  shortname: mounier
+
+
+plugins:
+  - jekyll-redirect-from
+
+
+# Build settings
+markdown: kramdown
+kramdown:
+  auto_ids: true
+permalink: pretty
+sass:
+  style: compressed
+repository: mickael-mounier/mickael-mounier.github.io
+
+exclude:
+  - README.md
+  - LICENSE.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
